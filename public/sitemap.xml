@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost:5000/posts/2019-02-14-encryption-is-not-enough/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/posts/2019-02-14-benefits-of-owning-your-data/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/kb/developers/2019-02-05-developer-overview/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/kb/installation/2019-02-05-first-steps/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/kb/installation/2019-02-05-installation-without-network/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/kb/developers/2019-02-05-introduction-to-the-intrustd-platform/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/kb/developers/2019-02-05-use-cases/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/authors/travis-athougies/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/kb/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/posts/2019-01-25-what-is-intrustd/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/posts/2019-02-05-test/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/authors/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/kb/developers/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/tags/frontpage/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/kb/installation/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/posts/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/tags/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:5000/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

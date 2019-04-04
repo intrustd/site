@@ -1,0 +1,15 @@
+<section id="frontposts">
+  {{ range first 3 .Site.Taxonomies.tags.frontpage }}
+  {{ $logo := .Resources.GetMatch "bg*" }}
+  <div class="post-box {{if .Params.invert}}post-box--invert{{end}}"
+       {{if $logo}}style="background-image:url({{$logo.Permalink}}); background-size: cover; {{ .Params.tileBackgroundCSS | safeHTMLAttr }}"{{end}}>
+    <h3>{{.Page.Title}}</h3>
+    <article class="summary">
+      {{.Page.Params.summary}}
+    </article>
+  </div>
+  {{ end }}
+  <div class="post-box blog-link">
+    <a href="{{ "/posts" | absURL }}">Read<br/>More</a>
+  </div>
+</section>

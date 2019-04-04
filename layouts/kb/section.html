@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ partial "head.html" . }}
+
+  <body id="page-top" class="knowledge-base section">
+    {{ partial "nav.html" . }}
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="intro-lead-in">
+            Search
+          </div>
+        </div>
+        <div class="row">
+          <input type="search" class="kb-search-bar" placeholder="Search for articles, bug reports, etc" autofocus="true"/>
+        </div>
+      </div>
+    </header>
+
+    <section class="kb-topics">
+      <div class="card-deck">
+        {{ range sort .Sections ".Params.priority" "desc"}}
+        <div class="card card-md-3">
+          <div class="card-title">
+            <i class="fa fa-{{.Params.icon}}"></i>
+            <h5 class="card-title">{{.Title}}</h5>
+          </div>
+          <div class="card-body">
+            <ul class="kb-topic-list">
+            {{ range first 5 (sort .Pages ".Params.priority" "desc") }}
+            <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+            {{ end }}
+            </ul>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+
+  </body>
+</html>

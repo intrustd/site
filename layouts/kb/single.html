@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ partial "head.html" . }}
+
+  <body id="page-top" class="knowledge-base single">
+    {{ partial "nav.html" . }}
+
+    {{if .Params.toc}}
+    <aside>
+      {{.TableOfContents}}
+    </aside>
+    {{end}}
+
+    {{ $logo := .Resources.GetMatch "header*" }}
+
+    {{ if $logo }}
+    <div class="kb-header-hero" style="background: url({{$logo.Permalink}}); background-position: {{if .Params.backgroundPosition}}{{.Params.backgroundPosition}}{{else}}center bottom{{end}}"></div>
+    {{ end }}
+
+    <article class="{{if $logo}}with-logo{{else}}no-logo{{end}}">
+
+      <h1>{{ .Title }}</h1>
+      <div class="byline">
+        <time pubdate datetime="{{.PublishDate.Format "01/01/2006"}}">published on {{.PublishDate.Format "01/01/2006"}}</time>
+        <address>
+          by
+          <ul class="author-list">
+            {{range .Params.authors}}
+            {{ with $.Site.GetPage (printf "/authors/%s" .) }}
+            <li><a href="{{.Permalink}}">{{.Params.name}}</a></li>
+            {{end}}
+            {{end}}
+          </ul>
+        </address>
+      </div>
+      <main>
+        {{.Content}}
+      </main>
+    </article>
+  </body>
+</html>

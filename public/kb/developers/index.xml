@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developers on intrustd.</title>
+    <link>http://localhost:5000/kb/developers/</link>
+    <description>Recent content in Developers on intrustd.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:5000/kb/developers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Developer Overview</title>
+      <link>http://localhost:5000/kb/developers/2019-02-05-developer-overview/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:5000/kb/developers/2019-02-05-developer-overview/</guid>
+      <description>What is Intrustd? Intrustd is an evolving, open networking standard that creates ad-hoc virtual private networks among end-user trusted devices.
+In its current form, Intrustd can be used to self-host various services. The server hosting these applications can be behind a firewall or connected directly to the internet. Intrustd uses peer-to-peer technology to communicate between the end-user browser and the Intrustd server. This allows users to own their own data, rather than trusting its storage to a separate company.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to the Intrustd platform</title>
+      <link>http://localhost:5000/kb/developers/2019-02-05-introduction-to-the-intrustd-platform/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:5000/kb/developers/2019-02-05-introduction-to-the-intrustd-platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sample Use Cases for Intrustd Applications</title>
+      <link>http://localhost:5000/kb/developers/2019-02-05-use-cases/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:5000/kb/developers/2019-02-05-use-cases/</guid>
+      <description>Purpose of Article This article seeks to enumerate sample use cases for Intrustd applications. The purpose is to determine which applications would be a good fit for Intrustd computing and which would not.
+Positive Use Cases The following use-cases represent areas where applications can add significant value via ports to the Intrustd platform.
+Data-driven applications Data-driven applications, like photo managers, file managers, backup solutions, are good candidates for hosting on Intrustd appliances.</description>
+    </item>
+    
+  </channel>
+</rss>

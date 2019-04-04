@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ partial "head.html" . }}
+
+  <body id="page-top" class="knowledge-base author">
+    {{ partial "nav.html" . }}
+
+    <figure class="profile-pic">
+      <img src="{{.Params.image}}"/>
+      <figcaption>
+        <h1>{{.Params.name}}</h1>
+        <article>
+          {{ .Content }}
+        </article>
+      </figcaption>
+    </figure>
+
+    <section class="listing">
+      <ol>
+        {{ range .Pages }}
+        <li>
+          <article>
+            <h4>{{.Title}}</h4>
+          </article>
+        </li>
+        {{ end }}
+      </ol>
+    </section>
+
+  </body>
+</html>
+

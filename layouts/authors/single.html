@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ partial "head.html" . }}
+
+  <body id="page-top" class="knowledge-base single">
+    {{ partial "nav.html" . }}
+
+    <article>
+      <h1>{{ .Params.name }}</h1>
+    </article>
+  </body>
+</html>

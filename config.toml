@@ -1,0 +1,112 @@
+baseURL = "http://localhost:5000/"
+languageCode = "en-us"
+title = "intrustd."
+theme = "hugo-agency-theme"
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+
+[params]
+  name = "intrustd."
+  description = "Personal NAS servers for your own personal cloud"
+  email = "hi@intrustd.com"
+  custom_css = [ "css/intrustd.css" ]
+
+  disableFonts = false
+
+  [params.error404]
+    heading = "Page could not be found"
+    text = "Please visit [this page](/)"
+
+  [params.navigation]
+    brand = "intrustd."
+    logo = "logo.svg"
+    services = "Learn"
+    contact = "Contact"
+
+    [[menu.postpend]]
+      url = "#"
+      name = "Buy Now"
+
+
+  [params.hero]
+    title = "Personal, private servers that you own (yes, really!)"
+    subtitle = "<small>Because your data should not be a company's product</small>"
+    buttonText = "Learn more"
+
+  [params.services]
+    enable = true
+    title = "The intrustd model"
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+       icon = "fa-server"
+       title = "Hardware"
+
+       description = "You run the open-source intrustd software on a certified NAS system that you install behind your network. This device is locked down and can only be accessed via WebRTC with client-side certificate verification. "
+
+    [[params.services.row.list]]
+       icon = "fa-lock"
+       title = "Authorization"
+
+       description = "You can authorize as many devices as you'd like to access the data an your system. You can even share data with friends through secure, revokable links. Intrustd uses industry standard encryption to ensure your data is only transferred between devices you have authorized."
+
+    [[params.services.row.list]]
+       icon = "fa-share-alt"
+       title = "Connectivity"
+
+       description = "Even though your intrustd device is behind your network, you access it like any other website. Intrustd-enabled websites use WebRTC to connect directly to your device and fetch your data directly using industry-standard encryption."
+
+  [params.portfolio]
+    enable = true
+    title = "The intrustd platform"
+    subtitle = "More than hosting your data, intrustd servers also host sandboxed applications, so you can do more with your data."
+
+    [params.portfolio.modal]
+       client = "Price"
+       date = "Publisher"
+       category = "Category"
+       buttonText = "Close"
+
+  [params.contact]
+    enable = true
+    title = "Contact Us"
+    subtitle = "Blah"
+
+    buttonText = "Send message"
+
+    email = "hi@intrustd.com"
+
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name"
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your e-mail address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+  [params.footer]
+    enable = true
+    copyright = "Copyright (c) 2019 Intrustd computing, LLC"
+
+    [[params.footer.quicklinks]]
+      text = "Blog"
+      link = "/blog"
+
+    [[params.footer.quicklinks]]
+      text = "Privacy Policy"
+      link = "/privacy"
+
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "/terms"

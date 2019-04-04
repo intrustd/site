@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on intrustd.</title>
+    <link>http://localhost:5000/posts/</link>
+    <description>Recent content in Posts on intrustd.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:5000/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Encryption is not enough</title>
+      <link>http://localhost:5000/posts/2019-02-14-encryption-is-not-enough/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:5000/posts/2019-02-14-encryption-is-not-enough/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Five benefits of owning your data</title>
+      <link>http://localhost:5000/posts/2019-02-14-benefits-of-owning-your-data/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:5000/posts/2019-02-14-benefits-of-owning-your-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:5000/posts/2019-01-25-what-is-intrustd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:5000/posts/2019-01-25-what-is-intrustd/</guid>
+      <description>title: &amp;ldquo;What is Intrustd?&amp;rdquo; date: 2019-01-25
+author: Travis Athougies Intrustd is a suite of open-source programs designed to turn any Linux box into your own personal server (called appliances), accessible over the internet to those you allow, without any extra setup.
+Traditionally, in order to run your own personal internet services, you either have to rent a server from a cloud computing provider or purchase a static IP from your ISP.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:5000/posts/2019-02-05-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:5000/posts/2019-02-05-test/</guid>
+      <description>test</description>
+    </item>
+    
+  </channel>
+</rss>

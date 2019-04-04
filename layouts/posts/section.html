@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ partial "head.html" . }}
+  <body class="section">
+    {{ partial "nav.html" . }}
+    <header>
+      <h1>Blog</h1>
+    </header>
+
+    <main>
+      {{ .Content }}
+      <ul class="posts-list">
+        {{ range .Paginator.Pages }}
+        <li>{{ .Title }} {{.}}
+          {{ $.Param "author" }}
+        </li>
+        {{ end }}
+      </ul>
+
+    </main>
+
+    {{ if .Site.Params.footer.enable }}
+      {{ partial "footer.html" . }}
+    {{ end }}
+  </body>
+</html>
+
