@@ -1,7 +1,9 @@
-------
+---
 title: "What is Intrustd?"
 date: 2019-01-25
-author: Travis Athougies
+authors:
+  - Travis Athougies
+backgroundCSS: "background-position: 50% 50%;"
 ---
 
 Intrustd is a suite of open-source programs designed to turn any Linux box
@@ -55,15 +57,17 @@ services do not overburden the system and cannot do anything naughty
 
 ### Is this a company?
 
-Not quite. Intrustd is a free, open-source initiative and will remain
-so. We are seeking to build a stable, well-used platform, and we think
-that open-source is the best demonstrated approach to do that.
+Yes and no. The Intrustd software is a free, open-source initiative
+and will remain so. We are seeking to build a stable, well-used,
+community-based platform, and we think that open-source is the best
+demonstrated approach to do that.
 
-Any monetization from Intrustd will be via the sale of custom Intrustd
-hardware appliances to meet the needs of end-consumers.
+However, I plan on paying my bills via the sale of turnkey Intrustd
+hardware appliances meant to enable our non-technical family and
+friends to exercise the right of owning their own data.
 
 ### Current Status
 
-Intrustd is still in development. Many componnents work with some
-tinkering, but there is still more to do.
-
+The intrustd platform is always improving, but we think it's ready
+enough for real usage. Download the Docker or VirtualBox image, or buy
+an appliance for your older (or younger) relatives!

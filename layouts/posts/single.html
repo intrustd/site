@@ -1,1 +1,46 @@
-Blah
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }} {{ else }}en-US{{ end }}">
+  {{ partial "head.html" . }}
+
+  <body class="single main-blog">
+    {{ partial "nav.html" . }}
+
+    {{ $bgImage := .Page.Resources.GetMatch "bg*" }}
+
+
+    <header {{ if $bgImage }} class="header-with-background"{{ end }}>
+      {{ if $bgImage }}
+      <div class="banner" {{printf "style=\"background-image: url(%s); %s\"" $bgImage.Permalink .Params.backgroundCSS | safeHTMLAttr}}></div>
+      {{ end }}
+      <h1><span>{{ .Title }}</span></h1>
+    </header>
+
+    <article class="{{ if $bgImage }}with-logo{{ else }}no-logo{{ end }}">
+
+      <time pubdate datetime="{{.PublishDate.Format "01/01/2006"}}">Published {{ .PublishDate.Format "01/01/2006" }}</time>
+      <address class="authors">
+        <ul class="author-list">
+          {{range .Params.authors}}
+          {{ with $.Site.GetPage (printf "/authors/%s" .) }}
+          <li><a href="{{ .Permalink}}">{{.Params.name}}</a></li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </address>
+
+      {{ if .Params.summary }}
+      <summary>
+        {{ .Params.summary }}
+      </summary>
+      {{ end }}
+
+      <main>
+        {{ .Content }}
+      </main>
+    </article>
+
+    {{ if .Site.Params.footer.enable }}
+      {{ partial "footer.html" . }}
+    {{ end }}
+  </body>
+</html>

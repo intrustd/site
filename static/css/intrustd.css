@@ -224,10 +224,6 @@ body.knowledge-base .kb-header-hero {
     background-position: center 100%;
 }
 
-body.single article.with-logo {
-    margin-top: -200px;
-}
-
 @media (min-width: 768px) {
     body.knowledge-base .kb-header-hero {
         margin-top: 100px;
@@ -249,6 +245,10 @@ section#frontposts {
 section#frontposts .post-box {
     padding: 10px 50px;
     min-width: 300px;
+}
+
+section#frontposts .post-box:not(.blog-link) a {
+    color: inherit;
 }
 
 section#frontposts .post-box .summary {
@@ -305,4 +305,74 @@ section#frontposts .post-box.blog-link:before {
     font-family: "FontAwesome";
     content: "\f054";
     color: #fed136;
+}
+
+.index header {
+    margin-top: 0 !important;
+}
+
+.teaser-image {
+    height: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+.single header.header-with-background div.banner {
+    height: 300px;
+    background-size: cover;
+}
+
+.single header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.single.main-blog header {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.single header.header-with-background h1 {
+    margin: -25px auto 0px auto;
+    width: 800px;
+}
+
+.single header.header-with-background h1 span {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.section.main-blog header {
+    margin-top: 120px;
+}
+
+.section.main-blog .thumbnail {
+    height: 400px;
+}
+
+.section.main-blog .caption h3 a {
+    color: black;
+}
+
+.section.main-blog .caption p {
+    height: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.single.main-blog main p {
+    font-size: 12pt;
+
+    text-align: justify;
+}
+
+.single.main-blog summary {
+    font-size: 14pt;
+    color: darkgrey;
+    font-style: italic;
+
+    margin: 5px 0 15px 0;
 }

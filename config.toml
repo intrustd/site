@@ -101,7 +101,7 @@ theme = "hugo-agency-theme"
 
     [[params.footer.quicklinks]]
       text = "Blog"
-      link = "/blog"
+      link = "/posts"
 
     [[params.footer.quicklinks]]
       text = "Privacy Policy"

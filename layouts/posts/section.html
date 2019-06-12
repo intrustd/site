@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
   {{ partial "head.html" . }}
-  <body class="section">
+  <body class="section main-blog">
     {{ partial "nav.html" . }}
     <header>
       <h1>Blog</h1>
@@ -9,13 +9,26 @@
 
     <main>
       {{ .Content }}
-      <ul class="posts-list">
-        {{ range .Paginator.Pages }}
-        <li>{{ .Title }} {{.}}
-          {{ $.Param "author" }}
-        </li>
-        {{ end }}
-      </ul>
+      <div class="container">
+        <div class="posts-list row">
+          {{ range .Paginator.Pages }}
+          {{ $teaseImage := .Resources.GetMatch "teaser*" }}
+          <div class="thumbnail col-md-4">
+            <div {{if $teaseImage}}style="background-image: url({{ $teaseImage.Permalink }})"{{end}} class="teaser-image" alt="{{ .Title }}">
+            </div>
+            <div class="caption">
+              <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <p>
+                {{ .Summary }}
+              </p>
+              <a href="{{ .Permalink }}">Read more</a>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+
+        {{ template "_internal/pagination.html" . }}
+      </div>
 
     </main>
 
