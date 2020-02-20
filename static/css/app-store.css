@@ -1,0 +1,158 @@
+.app-listing .app-header {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 150px;
+
+    padding: 0;
+    padding-bottom: 40px;
+}
+
+.app-listing .app-header .app-icon {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.app-listing .app-header header {
+}
+
+.app-listing .app-header header h1 {
+    margin-top: 0;
+}
+
+.app-divider {
+    width: 800px;
+}
+
+.app-thumbnail {
+    width: 200px;
+    height: 350px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 4px rgba(0,0,0, 40%);
+    margin: 20px 40px;
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: black;
+
+    cursor: pointer;
+
+    color: black;
+}
+
+.app-thumbnail > img {
+    min-height: 200px;
+    max-height: 200px;
+    display: block;
+    flex: 1 0;
+    background-color: white;
+    transition: opacity 0.4s;
+}
+
+.app-thumbnail:hover > img {
+    opacity: 0.5;
+}
+
+.app-thumbnail > figcaption {
+    background-color: #eee;
+    margin: 0;
+    padding: 4px;
+    flex: 1;
+}
+
+.app-thumbnail > figcaption h4 {
+    text-transform: uppercase;
+    font-size: 11pt;
+}
+
+.app-thumbnail .app-publisher {
+    font-size: 10pt;
+    color: #888;
+}
+
+.app-thumbnail .app-price {
+    font-size: 10pt;
+    display: inline-block;
+    float: right;
+}
+
+.app-thumbnail .app-tags, .app-listing .app-tags {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.app-thumbnail .app-tags > li,
+.app-listing .app-tags > li{
+    margin: 1px 3px;
+    border-radius: 1000px;
+    background-color: #aaa;
+    color: white;
+    padding: 0 10px;
+    display: inline-block;
+    float: left;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+section.app-screenshot-gallery {
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+section.app-screenshot-gallery .gallery-container {
+    max-width: 800px;
+    max-height: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+section.app-screenshot-gallery ul {
+    padding: 0;
+}
+
+.app-screenshot-gallery img {
+    width: 800px;
+
+}
+
+.app-listing article {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.app-listing .app-launcher-link {
+    display: block;
+    float: right;
+}
+
+.app-listing .app-launcher {
+    color: white;
+    padding: 8px 20px;
+    width: 100px;
+
+    font-size: 12pt;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+
+    border: none;
+}
+
+.app-listing aside {
+    width: 225px;
+    margin-left: 20px;
+}

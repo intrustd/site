@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }} {{ else }}en-US{{ end }}">
+  {{ partial "head.html" . }}
+
+  <body class="single app-listing">
+    {{ partial "nav.html" . }}
+
+
+    <section class="app-header">
+      <img class="app-icon" src="/img/logos/{{ .Params.icon }}"/>
+        {{ if eq .Params.price 0 }}
+        <a href="{{.Params.launchUrl}}" class="app-launcher-link">
+          <button class="app-launcher">
+            Launch
+          </button>
+        </a>
+        {{ else }}
+        <a class="app-launcher-link">
+          <button class="app-launcher">
+            Buy
+          </button>
+        </a>
+        {{ end }}
+      <header>
+        <h1>{{.Title}}</h1>
+        <span class="app-price">{{if eq .Params.price 0}}FREE{{else}}{{.Params.price}}{{end}}</span>
+        <address>{{.Params.publisher}}</address>
+        <ul class="app-tags">
+          {{range .Params.categories}}
+          <li>{{.}}</li>
+          {{end}}
+        </ul>
+      </header>
+    </section>
+
+    <hr class="app-divider"/>
+
+    <section class="app-screenshot-gallery">
+      <div class="gallery-container">
+        <ul id="lightSlider">
+          {{ $screens := .Page.Resources.Match "screen*" }}
+          {{ if $screens }}
+          {{ range $screens }}
+          <li>
+            <img src="{{ .Permalink | absURL }}"/>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+
+    <hr class="app-divider"/>
+
+    <article>
+      <main>
+        <h3>Overview</h3>
+        {{ .Content }}
+      </main>
+      <aside>
+        <h3>Additional Information</h3>
+        <dl>
+          {{ if .Params.version }}
+          <dt>Version</dt>
+          <dd>{{.Params.version}}</dd>
+          {{ end }}
+          {{ if .Params.lastRelease }}
+          <dt>Last Release</dt>
+          <dd>{{.Params.lastRelease}}</dd>
+          {{ end }}
+          {{ if .Params.contact }}
+          <dt>Contact</dt>
+          <dd>{{ .Params.contact }}</dd>
+          {{ end }}
+        </dl>
+      </aside>
+    </article>
+
+    {{ partial "js.html" . }}
+    <script type="text/javascript" language="javascript">
+      {{ if $screens }}
+      $(document).ready(function() {
+          $('#lightSlider').lightSlider({
+              pager: true,
+              item: 1,
+
+              loop: true
+
+          })
+      })
+      {{ end }}
+    </script>
+  </body>
+</html>

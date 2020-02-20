@@ -26,13 +26,18 @@ theme = "hugo-agency-theme"
     contact = "Contact"
 
     [[menu.postpend]]
-      url = "#"
+      url = "/products/intrustd"
       name = "Buy Now"
 
 
   [params.hero]
-    title = "Personal, private servers that you own (yes, really!)"
-    subtitle = "<small>Because your data should not be a company's product</small>"
+    title = "Personal, private, web-accessible<br/>servers that live with you,<br/> not corporations"
+    subtitles = [ "Because you are not a product",
+                  "Because you don't need moderation",
+                  "Because the web belongs to us all",
+                  "Because privacy policies are not enough",
+                  "Because companies shouldn't know who your friends are",
+                  "Because you don't need ads" ]
     buttonText = "Learn more"
 
   [params.services]

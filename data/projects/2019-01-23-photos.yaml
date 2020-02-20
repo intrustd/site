@@ -1,10 +1,12 @@
 modalID: 1
 title: Photos
 subtitle: Blah
-date: Intrustd, LLC
-img: blah.png
-preview: blah-preview.png
-client: FREE
+id: photos.intrustd.com
+publisher: Intrustd, LLC
+logo: photos.svg
+preview: photos.svg
+price: FREE
 clientLink: "https://photos.intrustd.com/"
-category: Multimedia
+categories:
+  - Multimedia
 description: This is so cool!

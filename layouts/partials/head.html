@@ -10,6 +10,8 @@
   <link href="{{ "css/bootstrap-v3.3.7/bootstrap.min.css" | absURL }}" rel="stylesheet">
   <link href="{{ "css/agency.css" | absURL }}" rel="stylesheet">
   <link href="{{ "css/intrustd.css" | absURL }}" rel="stylesheet">
+  <link href="{{ "css/app-store.css" | absURL }}" rel="stylesheet">
+  <link href="{{ "css/lightslider.css" | absURL }}" rel="stylesheet">
   <link href="{{ "css/jquery.form-validator-v2.3.44/theme-default.min.css" | absURL }}" rel="stylesheet">
 
   {{ range .Site.Params.custom_css }}
@@ -36,5 +38,6 @@
   {{ "<!--[if lt IE 9]>" | safeHTML }}
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="{{ "js/lightslider.js" | absURL }}"></script>
   {{ "<![endif]-->" | safeHTML }}
 </head>

@@ -13,6 +13,15 @@ body.knowledge-base >  header {
     color: #fff;
 }
 
+.intro-heading {
+    height: 4em;
+    font-size: 60px !important;
+}
+
+.intro-heading-text {
+    text-shadow: 0 0 15px rgba(0,0,1,0.5);
+}
+
 body.knowledge-base > header .intro-lead-in {
     padding-top: 200px;
     padding-bottom: 50px;
@@ -97,8 +106,17 @@ body.single article {
     padding: 1px 15px;
 }
 
-body.single article.no-logo, body.author figure {
+body.single article.no-logo, body.author figure, body.product .product-header {
     margin-top: 150px;
+}
+
+body.product .product-header {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
 }
 
 body.author figure {
@@ -128,33 +146,33 @@ body.author figure figcaption {
     }
 }
 
-main h1 {
+aside h1, main h1 {
     font-size: 20pt;
 }
 
-main h2 {
+aside h3, main h2 {
     font-size: 16pt;
 }
 
-main h3 {
+aside h3, main h3 {
     font-size: 14pt;
     text-transform: none;
 }
 
-main h4 {
+aside h4, main h4 {
     font-size: 14pt;
     color: #888;
     text-transform: none;
 }
 
-main h5 {
+aside h5, main h5 {
     font-size: 12pt;
     color: #888;
     text-transform: none;
     font-style: italic;
 }
 
-main h6 {
+aside h6, main h6 {
     font-size: 12pt;
     color: #888;
     text-transform: none;
@@ -309,6 +327,12 @@ section#frontposts .post-box.blog-link:before {
 
 .index header {
     margin-top: 0 !important;
+    text-align: left;
+}
+
+.index header .intro-text {
+    max-width: 800px;
+    text-align: left;
 }
 
 .teaser-image {

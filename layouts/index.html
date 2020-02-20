@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
   {{ partial "head.html" . }}
@@ -37,10 +37,22 @@
       {{ partial "footer.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.portfolio.enable }}
-      {{ partial "modals.html" . }}
-    {{ end }}
-
     {{ partial "js.html" . }}
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+      var typed = new Typed('.intro-heading-text', {
+          strings: [
+              {{range $index, $subtitle := .Site.Params.hero.subtitles}}
+              {{ if not (eq $index 0) }},{{end}}
+              {{ $subtitle }}
+              {{end}}
+          ],
+          typeSpeed: 50,
+          backSpeed: 30,
+          smartBackspace: true,
+          backDelay: 2000,
+          loop: true
+      })
+    </script>
   </body>
 </html>

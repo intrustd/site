@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="117.26833mm"
+   width="109.53426mm"
    height="23.724489mm"
-   viewBox="0 0 117.26833 23.724489"
+   viewBox="0 0 109.53426 23.724489"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="logo.svg">
   <defs
      id="defs2">
@@ -23,7 +23,7 @@
        inkscape:vp_x="39.998591 : 211.3858 : 1"
        inkscape:vp_y="0 : 349.62174 : 0"
        inkscape:vp_z="103.24372 : 212.70729 : 1"
-       inkscape:persp3d-origin="72.347967 : 166.064 : 1"
+       inkscape:persp3d-origin="72.347968 : 166.064 : 1"
        id="perspective895" />
   </defs>
   <sodipodi:namedview
@@ -34,15 +34,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="248.76083"
-     inkscape:cy="3.3481218"
+     inkscape:cx="120.54655"
+     inkscape:cy="3.3481293"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1588"
-     inkscape:window-height="821"
+     inkscape:window-width="1918"
+     inkscape:window-height="1054"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="24"
      inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -76,7 +76,7 @@
          id="tspan959"
          x="111.05853"
          y="155.15309"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.43511391px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.44656482;fill:#ffffff">intrustd.</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.43511391px;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.44656482">intrustd.</tspan></text>
     <g
        id="g1001">
       <path
@@ -124,12 +124,12 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot1045"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:18.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
          id="flowRegion1047"><rect
            id="rect1049"
            width="98.571426"
            height="130.71428"
            x="244.28572"
            y="63.953072" /></flowRegion><flowPara
-         id="flowPara1051"></flowPara></flowRoot>  </g>
+         id="flowPara1051" /></flowRoot>  </g>
 </svg>

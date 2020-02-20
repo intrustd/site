@@ -1,0 +1,22 @@
+<a class="app-thumbnail-link" href="{{ .Page.Permalink }}">
+  <figure class="app-thumbnail">
+    {{ $url := printf "img/logos/%s" .Params.icon }}
+    <img src="{{ $url | absURL }}" class="img-responsive" alt="App Icon for {{.Title}}">
+    <figcaption>
+      <h4>{{ .Title | markdownify }}</h4>
+      <span class="app-price">
+        {{ if eq .Params.price 0 }}
+        FREE
+        {{ else }}
+        {{ .Params.price }}
+        {{ end }}
+      </span>
+      <address class="app-publisher">{{ .Params.publisher }}</address>
+      {{ range .Params.categories }}
+      <ul class="app-tags">
+        <li>{{ . | markdownify }}</li>
+      </ul>
+      {{ end }}
+    </figcaption>
+  </figure>
+</a>

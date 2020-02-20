@@ -1,8 +1,9 @@
 modalID: 2
 title: Backup
 subtitle: "Keep your data safe and secure with real-time backups from anywhere in the world"
-date: Intrustd, LLC
-img: backup.png
+publisher: Intrustd, LLC
+id: backups.intrustd.com
+logo: backup.png
 preview: backup-preview.png
 client: FREE
 clientLink: "https://backups.intrustd.com/"

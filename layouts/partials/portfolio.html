@@ -1,0 +1,18 @@
+{{ "<!-- Portfolio Grid Section -->" | safeHTML }}
+<section id="portfolio" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ with .Site.Params.portfolio.title }}{{ . | markdownify }}{{ end }}</h2>
+        <h3 class="section-subheading text-muted">{{ with .Site.Params.portfolio.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+      </div>
+    </div>
+    <div class="row">
+
+      {{ range first 3 .Site.Taxonomies.tags.featured }}
+        {{ partial "app_thumbnail.html" . }}
+      {{ end }}
+
+    </div>
+  </div>
+</section>

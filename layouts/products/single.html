@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ with.Site.LanguageCode }}{{ . }} {{ else }}en-US{{ end }}">
+  {{ partial "head.html" . }}
+
+  <body class="single product">
+    {{ partial "nav.html" . }}
+
+    <section class="product-header">
+      <header>
+
+        <h1>{{ .Params.name }}</h1>
+
+        <span class="price">$ X.XX</span>
+
+        {{ range $variant, $option := .Params.options }}
+        <label for="variant_{{$variant}}">{{ $option.name }}:</label>
+        {{ range $option.variants }}
+        <label><input type="radio" name="variant_{{ $variant }}" {{ if .selected }}checked{{ end }}/>{{ .name }}</label>
+        {{ end }}
+        {{ end }}
+
+        <summary>
+          {{ .Params.summary }}
+        </summary>
+
+        <button class="buy-now">
+          Buy Now | <span class="price">$X.XX</span>
+        </button>
+      </header>
+    </section>
+
+      {{ $pics := .Page.Resources.Match "product*" }}
+      <div class="product-shot">
+        <ul id="lightSlider">
+          {{ if $pics }}
+          {{ range $pics }}
+          <li>
+            <img src="{{ .Permalink | absURL }}"/>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    {{ partial "js.html" .}}
+   <script type="text/javascript" language="javascript">
+     {{ if $pics }}
+     $(document).ready(function() {
+         $('#lightSlider').lightSlider({
+             pager: true,
+             item: 1,
+             loop: true
+         })
+     })
+     {{ end }}
+   </script>
+  </body>
+</html>

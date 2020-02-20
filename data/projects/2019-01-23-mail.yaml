@@ -1,7 +1,8 @@
 modalID: 3
 title: Mail
 subtitle: Blah
-date: Intrustd, LLC
+publisher: Intrustd, LLC
+id: mail.intrustd.com
 img: mail.png
 preview: mail-preview.png
 client: FREE
